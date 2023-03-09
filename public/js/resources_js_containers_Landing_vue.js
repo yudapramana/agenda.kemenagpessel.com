@@ -24,6 +24,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   mounted: function mounted() {
+    document.body.classList.remove('hold-transition', 'sidebar-mini');
     document.body.classList.add('layout-top-nav');
   },
   destroyed: function destroyed() {

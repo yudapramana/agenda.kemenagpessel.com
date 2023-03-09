@@ -46,11 +46,16 @@ __webpack_require__.r(__webpack_exports__);
       this.$router.push('/login');
     }
   },
+  created: function created() {
+    document.body.classList.remove('layout-top-nav');
+    document.body.classList.add('hold-transition', 'sidebar-mini');
+  },
   mounted: function mounted() {
+    document.body.classList.remove('layout-top-nav');
     document.body.classList.add('hold-transition', 'sidebar-mini');
   },
   destroyed: function destroyed() {
-    document.body.classList.add('hold-transition', 'sidebar-mini');
+    document.body.classList.remove('hold-transition', 'sidebar-mini');
   }
 });
 

@@ -141,6 +141,7 @@ export default {
         }
     },
     mounted() {
+        document.body.classList.remove('hold-transition', 'sidebar-mini');
         document.body.classList.add('layout-top-nav');
     },
     destroyed() {

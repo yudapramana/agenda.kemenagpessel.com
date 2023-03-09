@@ -41,11 +41,16 @@ export default {
             this.$router.push('/login');
         }
     },
+    created() {
+        document.body.classList.remove('layout-top-nav');
+        document.body.classList.add('hold-transition', 'sidebar-mini');
+    },
     mounted() {
+        document.body.classList.remove('layout-top-nav');
         document.body.classList.add('hold-transition', 'sidebar-mini');
     },
     destroyed() {
-        document.body.classList.add('hold-transition', 'sidebar-mini');
+        document.body.classList.remove('hold-transition', 'sidebar-mini');
     },
 };
 </script>

@@ -42,11 +42,11 @@ export default {
         }
     },
     created() {
-        document.body.classList.remove('layout-top-nav');
+        document.body.classList.remove('hold-transition', 'layout-top-nav');
         document.body.classList.add('hold-transition', 'sidebar-mini');
     },
     mounted() {
-        document.body.classList.remove('layout-top-nav');
+        document.body.classList.remove('hold-transition', 'layout-top-nav');
         document.body.classList.add('hold-transition', 'sidebar-mini');
     },
     destroyed() {

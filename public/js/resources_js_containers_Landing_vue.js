@@ -25,10 +25,13 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     document.body.classList.remove('hold-transition', 'sidebar-mini');
-    document.body.classList.add('layout-top-nav');
+    document.body.classList.add('hold-transition', 'layout-top-nav');
+    $('.navbar-toggler').on('click', function () {
+      $('.navbar-collapse').collapse('toggle');
+    });
   },
   destroyed: function destroyed() {
-    document.body.classList.remove('layout-top-nav');
+    document.body.classList.remove('hold-transition', 'layout-top-nav');
   }
 });
 

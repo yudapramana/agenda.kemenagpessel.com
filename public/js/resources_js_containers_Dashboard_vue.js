@@ -47,11 +47,11 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   created: function created() {
-    document.body.classList.remove('layout-top-nav');
+    document.body.classList.remove('hold-transition', 'layout-top-nav');
     document.body.classList.add('hold-transition', 'sidebar-mini');
   },
   mounted: function mounted() {
-    document.body.classList.remove('layout-top-nav');
+    document.body.classList.remove('hold-transition', 'layout-top-nav');
     document.body.classList.add('hold-transition', 'sidebar-mini');
   },
   destroyed: function destroyed() {

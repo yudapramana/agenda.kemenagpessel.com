@@ -140,6 +140,10 @@ export default {
             this.$router.push('/login');
         }
     },
+    created() {
+        document.body.classList.add('hold-transition', 'layout-top-nav');
+        document.body.classList.remove('hold-transition', 'sidebar-mini');
+    },
     mounted() {
         document.body.classList.remove('hold-transition', 'sidebar-mini');
         document.body.classList.add('hold-transition', 'layout-top-nav');

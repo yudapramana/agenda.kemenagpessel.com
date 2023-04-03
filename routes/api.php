@@ -86,8 +86,10 @@ Route::get('/get/schedule/today_tomorrow', function () {
 
 Route::get('/get/schedule/currentmonth', function () {
     
+    // $month = date('m');
+    // $scheds = \App\Models\Schedule::whereMonth('start_date', $month)->get();
     $month = date('m');
-    $scheds = \App\Models\Schedule::whereMonth('start_date', $month)->get();
+    $scheds = \App\Models\Schedule::get();
 
     $pejabat = \App\Models\User::whereHas("roles", function ($q) {
         $q->whereIN("name", ['director', 'manager', 'supervisor']);

@@ -126,8 +126,8 @@ class ScheduleController extends Controller
         $dataSchedule = [
             'title' => $data['title'],
             'description' => $data['description'],
-            'start_date' => $data['start_date'],
-            'end_date' => $data['end_date'],
+            'start_date' => date('Y-m-d', strtotime($data['start_date'])),
+            'end_date' => date('Y-m-d', strtotime($data['end_date'])),
             'start_time' => $data['start_time']['hours'] . ':' . $data['start_time']['minutes']  . ':' . $data['start_time']['seconds'],
             'end_time' => $data['end_time']['hours'] . ':' . $data['end_time']['minutes']  . ':' . $data['end_time']['seconds'],
             'inviter' => $data['inviter'],

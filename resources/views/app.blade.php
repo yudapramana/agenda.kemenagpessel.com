@@ -12,6 +12,7 @@
             position: fixed !important;
             bottom: 0 !important;
         }
+
     </style>
 
     <title>SIAPDI KEMENAG - Sistem Informasi Agenda Pimpinan</title>
@@ -34,6 +35,15 @@
 
     <script src="{{ asset('js/app.js') }}"></script>
 
+    <script>
+        (function() {
+            var s = document.createElement("script");
+            s.setAttribute("data-account", "P5e16SfPdW");
+            s.setAttribute("src", "https://cdn.userway.org/widget.js");
+            document.body.appendChild(s);
+        })();
+
+    </script><noscript>Enable JavaScript to ensure <a href="https://userway.org">website accessibility</a></noscript>
 </body>
 
 </html>

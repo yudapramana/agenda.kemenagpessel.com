@@ -17,6 +17,7 @@ class HomeController extends Controller
     {
         if($request->segment(1) == 'devmode' || $request->segment(1) == 'xdown' || $request->segment(1) == 'xup') {
             if($request->segment(1) == 'xdown') {
+                return $request->segment(1) . ' === ' . $request->segment(2);
                 Artisan::call('down', ['--secret' => 'devmode', '--render' => 'errors.' . $request->segment(2)]);
                 return 'The system has been down';
             } elseif($request->segment(1) == 'xup') {

@@ -113,6 +113,9 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     ]);
 });
 
-
+Route::get('/xup', function () {
+    Artisan::call('up');
+    return 'Web Up';
+});
 
 // Route::apiResource('user', UserController::class);

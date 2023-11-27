@@ -118,4 +118,10 @@ Route::get('/xup', function () {
     return 'Web Up';
 });
 
+Route::get('/xdown/{view}', function ($view) {
+    Artisan::call('down', ['--secret' => 'devmode', '--render' => 'errors.'.$view]);
+
+    return 'Web Down with command view: '. $view;
+});
+
 // Route::apiResource('user', UserController::class);

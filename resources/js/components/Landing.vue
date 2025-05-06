@@ -311,7 +311,7 @@ export default {
 }
 
 .jumbotron {
-    background-image: url(/img/landing_long1.png);
+    background-image: url(/img/landing_long1baru.png);
     background-size: cover;
     height: 100%;
 }
